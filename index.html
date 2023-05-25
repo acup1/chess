@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>chess</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div style="position: relative;">
+    <div style="position: absolute; left: 10%; top: 15px; z-index: 2;">
+      <input style="width: 200px;" type="text" placeholder="url" id="piece_url"><br>
+      <input style="width: 200px;" type="text" placeholder="type(black,white,another)" id="piece_type"><br>
+      <button style="width: 200px;" onclick="addPieceToFiguresBoard();">add piece to figures board</button><br>
+      <button style="width: 200px;" onclick="createPieceByURL();">create piece by url</button><br><br>
+      <button style="width: 200px;" onclick="showSelectedSquare();">show selected square</button><br>
+      <button style="width: 200px;" onclick="clearBoard();">clear board</button><br>
+      <button style="width: 200px;" onclick="removeSelected();">remove selected</button><br>
+      <button style="width: 200px;" onclick="recreateBoard();">recreate board</button>
+    </div>
+
+    <div style="left: 0;right: 0;margin: 0 auto;z-index: 1;" class="container">
+      <div class="board" id="board"></div>
+    </div>
+    <div style="position: absolute;z-index: 2;left: 80%;right: 0;margin: 0 auto;" class="container">
+      <div class="board" id="figuresboard"></div>
+    </div>.
+  </div>
+
+  <script src="main.js"></script>
+  <script src="menu.js"></script>
+</body>
+
+</html>
