@@ -35,7 +35,7 @@ function addPieceToFiguresBoard() {
                 break
             }
         }
-    }qwe
+    }
 }
 
 function clearBoard() {
